@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+body{
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    background-color: rgb(4, 119, 202);
+    color: #fff;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+img{
+    width: 100%;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.header-logo{
+    width: 50px;
+}
+.header{
+    padding: 15px 0;
+}
+.header-list{
+    display: flex;
+    gap: 30px;
+}
+.header-list a {
+    font-size: 20px;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.header-list a:hover{
+    opacity: 0.9;
+}
+.header-list a:active{
+    opacity: 1;
+}
+.header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+.welcome-img{
+    width: 300px;
+    cursor: pointer;
+
+    animation: moveCoin 3s infinite alternate ease-in-out;
+}
+
+@keyframes moveCoin{
+    0%{
+        transform: none;
+    }
+    100%{
+        transform: translateY(-30px);
+    }
+}
+
+.welcome{
+    padding: 70px;
+}
+.welcome .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.welcome-title{
+    margin-bottom: 50px;
+}
+.counter{
+    margin-top: 30px;
+}
